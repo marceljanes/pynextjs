@@ -1,0 +1,12 @@
+.horizontalList {
+    list-style: none;
+    margin-bottom: 50px;      
+    font-size: small;
+    
+  
+  }
+
+
+.horizontalList li {
+    display: inline-block;
+  }

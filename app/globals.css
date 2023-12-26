@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: rgb(241, 241, 241);
+  color: rgb(88, 86, 86); 
+}
+
+.homeContainer {
+  text-align: center;  
+  
+}
+
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  
+}
+
+.feature {
+  max-width: 300px;
+}
+
+.feature h2 {
+  
+}
