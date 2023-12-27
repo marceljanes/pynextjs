@@ -10,7 +10,7 @@ const Breadcrumb = () => {
     return (
         <div className={`${styles.horizontalList}`}>
             
-                <ul className="bg-green-200 text-green-500 rounded p-1 font-medium -mt-5 -ml-5 -mr-5 ">
+                <ul className="bg-stone-300 text-gray-50 rounded p-1 font-medium -mt-5 -ml-5 -mr-5 ">
                     <li><Link href={'/'}>HOME</Link></li>
                     {pathNames.length > 0 && <span className="mr-2 ml-2">&gt;</span>}
                 {
