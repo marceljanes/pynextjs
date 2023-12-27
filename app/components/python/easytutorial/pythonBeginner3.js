@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './style.module.css'; // Ensure this points to the correct CSS module file
 import BeginnerBatchComp from '../beginnerBatch';
 import AdvancedBatchComp from '../advancedBatch';
+import Link from 'next/link';
 
 const PythonFundamentals3 = () => {
   return (
@@ -15,7 +16,7 @@ const PythonFundamentals3 = () => {
             </div>
       </div>
       
-        <h1>Python Programming for Beginners: Learn Python Basics Part II</h1>
+        <h1>Python Programming for Beginners: Learn Python Basics Part III</h1>
       <p>Welcome to Part 3 of our Python Essentials Guide. In this segment, we delve into sophisticated Python programming concepts. These advanced topics, including list comprehensions, decorators, error handling, and file operations, are pivotal for enhancing your Python expertise. Understanding these intricate concepts will empower you to write more efficient, scalable, and maintainable code, thereby elevating your programming acumen to new heights.</p>
 
       <h2>List Comprehensions: Elegant and Efficient Python Lists</h2>
@@ -97,6 +98,30 @@ const PythonFundamentals3 = () => {
       <div>
         <p>This guide has taken you through some of Python's advanced concepts, enhancing your understanding of the language and its capabilities. By mastering these topics, you're well-equipped to tackle more complex programming challenges and take advantage of Python's full potential. Remember, the key to proficiency in Python, as with any programming language, lies in practice and continuous learning.</p>
       </div>
+      {/* Row with two boxes for Course 1 and Course 2 */}
+      <div className="my-10 flex flex-col md:flex-row gap-4">
+            {/* Box for Course 1 */}
+            <div className="flex-1 p-6 bg-blue-100 rounded-xl shadow-md">
+                <h4 className="text-xl font-bold text-blue-800 mb-3">Python Fundamentals Course 1</h4>
+                <p className="text-blue-600 mb-4">Begin your Python journey with topics like basic syntax, data types, and operators. This course lays the foundation for Python programming.</p>
+                <Link href={"/tutorials/python/beginner/fundamentals-part-one"}>
+                    <div className="cursor-pointer bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        <p>Start Course 1</p>
+                    </div>
+                </Link>
+            </div>
+
+            {/* Box for Course 2 */}
+            <div className="flex-1 p-6 bg-green-100 rounded-xl shadow-md">
+                <h4 className="text-xl font-bold text-green-800 mb-3">Python Fundamentals Course 2</h4>
+                <p className="text-green-600 mb-4">Go into Python with lists, arrays, and basic object-oriented programming. Get an understanding of Python's structure and functionality.</p>
+                <Link href={"/tutorials/python/beginner/fundamentals-part-two"}>
+                    <div className="cursor-pointer bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                        <p>Start Course 2</p>
+                    </div>
+                </Link>
+            </div>
+        </div>
     </div>
   );
 };

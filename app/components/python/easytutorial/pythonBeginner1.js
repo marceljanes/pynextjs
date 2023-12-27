@@ -1,5 +1,6 @@
 import styles from './style.module.css';
 import BeginnerBatchComp from '../beginnerBatch';
+import Link from 'next/link';
 
 
 
@@ -98,6 +99,30 @@ const PythonFundamentals = () => {
 
         <h3>Embark on Your Python Programming Journey</h3>
         <p>Python is a language of endless opportunities. Start with these fundamentals and continue exploring more complex topics and projects. Keep practicing, and you'll soon become proficient in Python programming. Enjoy your coding adventure!</p>
+        {/* Row with two boxes for Course 1 and Course 2 */}
+      <div className="my-10 flex flex-col md:flex-row gap-4">
+            {/* Box for Course 2 */}
+            <div className="flex-1 p-6 bg-green-100 rounded-xl shadow-md">
+                <h4 className="text-xl font-bold text-green-800 mb-3">Python Fundamentals Course 2</h4>
+                <p className="text-green-600 mb-4">Delve deeper into Python with lists, arrays, and basic object-oriented programming. Enhance your understanding of Python's structure and functionality.</p>
+                <Link href={"/tutorials/python/beginner/fundamentals-part-two"}>
+                    <div className="cursor-pointer bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                        <p>Start Course 2</p>
+                    </div>
+                </Link>
+            </div>
+
+            {/* Box for Course 3 */}
+            <div className="flex-1 p-6 bg-purple-100 rounded-xl shadow-md">
+                <h4 className="text-xl font-bold text-purple-800 mb-3">Python Fundamentals Course 3</h4>
+                <p className="text-purple-600 mb-4">Advance your skills with topics like list comprehensions, decorators, error handling, and file operations. This course prepares you for complex programming challenges.</p>
+                <Link href={"/tutorials/python/beginner/fundamentals-part-three"}>
+                    <div className="cursor-pointer bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
+                        <p>Start Course 3</p>
+                    </div>
+                </Link>
+            </div>
+        </div>
       </div>
     </>
   );

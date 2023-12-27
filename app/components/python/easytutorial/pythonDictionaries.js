@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './style.module.css';
 import BeginnerBatchComp from '../beginnerBatch';
 import AdvancedBatchComp from '../advancedBatch';
+import Link from 'next/link';
 
 const PythonDictionaries = () => {
   return (
@@ -182,7 +183,18 @@ const PythonDictionaries = () => {
       <p>
         This comprehensive tutorial equips you with a deep understanding of Python dictionaries. From basic operations to advanced applications, you're now ready to leverage dictionaries in your Python projects.
       </p>
+      {/* Fundamentals Course Link Section */}
+      <div className="my-10 p-6 bg-yellow-100 rounded-xl shadow-md">
+          <h4 className="text-xl font-bold text-yellow-800 mb-3">Explore Our Python Fundamentals Courses</h4>
+          <p className="text-yellow-600 mb-4">Ready to dive deeper? Check out our comprehensive Python Fundamentals courses to further enhance your skills.</p>
+          <Link href={"/tutorials/python/beginner"}>
+            <div className="cursor-pointer bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+              <p>Discover Fundamentals Courses</p>
+            </div>
+          </Link>
+        </div>
     </div>
+    
   );
 };
 

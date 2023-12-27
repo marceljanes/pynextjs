@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './style.module.css';
 import BeginnerBatchComp from '../beginnerBatch';
 import AdvancedBatchComp from '../advancedBatch';
+import Link from 'next/link';
 
 const PythonFundamentals2 = () => {
   return (
@@ -150,7 +151,30 @@ const PythonFundamentals2 = () => {
 
         <h2>Conclusion</h2>
         <p>This guide has explored advanced Python concepts including lists, arrays, and object-oriented programming, equipping you with the knowledge to tackle more complex programming challenges in Python. Remember, practice is key to mastering Python, so keep experimenting and building with these new skills.</p>
-        
+        {/* Row with two boxes for Course 1 and Course 3 */}
+      <div className="my-10 flex flex-col md:flex-row gap-4">
+            {/* Box for Course 1 */}
+            <div className="flex-1 p-6 bg-blue-100 rounded-xl shadow-md">
+                <h4 className="text-xl font-bold text-blue-800 mb-3">Python Fundamentals Course 1</h4>
+                <p className="text-blue-600 mb-4">Begin your Python journey with topics like basic syntax, data types, and operators and your first small programs. This course lays the foundation for Python programming.</p>
+                <Link href={"/tutorials/python/beginner/fundamentals-part-one"}>
+                    <div className="cursor-pointer bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        <p>Start Course 1</p>
+                    </div>
+                </Link>
+            </div>
+
+            {/* Box for Course 3 */}
+            <div className="flex-1 p-6 bg-purple-100 rounded-xl shadow-md">
+                <h4 className="text-xl font-bold text-purple-800 mb-3">Python Fundamentals Course 3</h4>
+                <p className="text-purple-600 mb-4">Advance your skills with topics like list comprehensions, decorators, error handling, and file operations. This course prepares you for complex programming challenges.</p>
+                <Link href={"/tutorials/python/beginner/fundamentals-part-three"}>
+                    <div className="cursor-pointer bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
+                        <p>Start Course 3</p>
+                    </div>
+                </Link>
+            </div>
+        </div>
 
 
 

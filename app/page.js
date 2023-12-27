@@ -35,12 +35,33 @@ export default function Home() {
         <div className="absolute bottom-5 right-1/2 transform translate-x-1/2 bg-white px-4 py-2 rounded-full shadow-md">Scientific Computing</div>
       </div>
     </section>
+    <h2 className="text-2xl font-bold mb-3 mt-10">Let's start with our Tutorials</h2>
+    {/* Python Tutorials Section */}
+    <section className="container mx-auto p-4">
+        <div className="flex flex-col md:flex-row justify-center gap-4">
+          {/* Beginner Tutorials */}
+          <div className="bg-blue-100 rounded-xl shadow-md p-4 flex-1 max-w-md">
+              <h3 className="text-xl font-bold text-blue-800 mb-3">Beginner Python Tutorials</h3>
+              <p className="text-blue-600 mb-4">Start your journey into Python with our beginner-friendly tutorials. Learn the basics and build a strong foundation.</p>
+              <Link href={'/tutorials/python/beginner'}>
+                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                      Explore Beginner Tutorials
+                  </button>
+              </Link>
+          </div>
 
-    <section className="w-1/3 bg-stone-200 mt-10 py-8 px-6 border-l-8 border-l-fuchsia-500 hover:bg-stone-300">
-      
-        <Link href="/tutorials/python/beginner" className="btn btn-primary btn-lg">Python Basic Tutorials</Link>
-     
-    </section>
+          {/* Advanced Tutorials */}
+          <div className="bg-green-100 rounded-xl shadow-md p-4 flex-1 max-w-md">
+              <h3 className="text-xl font-bold text-green-800 mb-3">Advanced Python Tutorials</h3>
+              <p className="text-green-600 mb-4">Enhance your skills with our advanced tutorials. Dive into complex topics and become a Python expert. Find your profession</p>
+              <Link href={'/tutorials/python/advanced'}>
+                  <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                      Explore Advanced Tutorials
+                  </button>
+              </Link>
+          </div>
+        </div>
+      </section>
 
 
 

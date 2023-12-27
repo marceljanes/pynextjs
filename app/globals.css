@@ -6,6 +6,7 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background-color: rgb(241, 241, 241);
   color: rgb(88, 86, 86); 
+  font-size: 15px;
 }
 
 .homeContainer {
