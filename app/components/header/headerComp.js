@@ -9,34 +9,37 @@ const HeaderCompStandard = ({ mode, setMode }) => {
         setIsOpen(!isOpen);
     };
 
+    const linkStyle = "block px-3 py-2 rounded-md text-base md:mt-0 md:ml-6 cursor-pointer hover:text-stone-600";
+    const modeButtonStyle = "rounded p-1 bg-gray-400 text-gray-200 border-0 text-xs md:inline-block hover:bg-gray-500";
+
     return (
-        <div className={`${styles.container} bg-gray-200 text-gray-400`}> {/* Adjusted colors */}
-            <div className="flex flex-col md:flex-row items-center justify-between py-2 px-2">
-                <div className="flex items-center justify-between w-full md:w-auto">
+        <div className={`${styles.container} bg-stone-100 text-stone-400 shadow-md`}>
+            <div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-1 px-4 md:px-6">
+                {/* Logo */}
+                <div className="flex-grow-0">
                     <Link href="/">
-                        <span className="text-lg font-bold cursor-pointer">py-learner</span>
+                        <span className="flex items-center cursor-pointer">
+                            <div className="bg-stone-700 p-2 rounded">
+                                <div className="text-[#dcdcdc] font-mono text-sm">
+                                    <span className="text-yellow-300">py</span>
+                                    <span className="text-stone-200">Learner</span>
+                                </div>
+                            </div>
+                        </span>
                     </Link>
-                    <button className="text-2xl md:hidden" onClick={toggleMenu}>
-                        &#9776; {/* Hamburger Icon */}
+                </div>
+
+                {/* Hamburger Menu Button */}
+                <button className="text-2xl md:hidden" onClick={toggleMenu}>
+                    &#9776;
+                </button>
+
+                {/* Dark Mode Button */}
+                <div className="flex-grow-0">
+                    <button className={modeButtonStyle} onClick={() => setMode(!mode)}>
+                        Bright/Dark
                     </button>
                 </div>
-
-                <div className={`flex-col md:flex-row md:flex ${isOpen ? 'flex' : 'hidden'}`}>
-                    <Link href="/tutorials/python/beginner">
-                        <span className="block px-3 py-2 rounded-md text-base font-medium md:mt-0 md:ml-6 cursor-pointer">Beginner Tutorials</span>
-                    </Link>
-                    <Link href="/tutorials/python/advanced">
-                        <span className="block px-3 py-2 rounded-md text-base font-medium md:mt-0 md:ml-6 cursor-pointer">Advanced Tutorials</span>
-                    </Link>
-                    {/* Add other links as needed */}
-                </div>
-
-               <button 
-                  className="rounded p-1 bg-gray-400 text-gray-200 border-0 text-xs hidden md:inline-block md:ml-4" 
-                  onClick={() => setMode(!mode)}>
-                      Bright/Dark
-              </button>
-
             </div>
         </div>
     );
