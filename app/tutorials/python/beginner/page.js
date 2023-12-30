@@ -12,7 +12,7 @@ export default function PythonBeginnerTutorials() {
             </Head>
 
             <div className="container mx-auto p-6">
-                <h1 className="text-3xl font-bold mb-6">Python Beginner Tutorials</h1>
+                <h1 className="text-2xl font-bold mb-6">Python Beginner Tutorials</h1>
                 <p className="mb-4">Our Python Basic Courses offer a comprehensive introduction to essential Python topics. Designed for beginners and intermediate learners, the curriculum covers fundamental data structures, operations, lists, arrays, dictionaries, and object-oriented programming.</p>
                 <p className="font-bold mt-6">What you will learn:</p>
                 <ul className="list-inside list-disc pl-6 mt-2">
@@ -27,7 +27,7 @@ export default function PythonBeginnerTutorials() {
                     <div className="p-6 bg-blue-100 rounded-xl shadow-lg transform transition duration-500 hover:scale-105">
                         <Link href={"/tutorials/python/beginner/fundamentals-part-one"}>
                             <div className="cursor-pointer">
-                                <h4 className="text-xl font-bold text-blue-800 mb-3">Python Fundamentals Course 1</h4>
+                                <h4 className="text-lg font-bold text-blue-800 mb-3">Python Fundamentals Course 1</h4>
                                 <p className="text-blue-600 mb-4">Begin your Python journey with basic syntax, data types, and operators. Ideal for starters.</p>
                                 <small className="block text-gray-500 mb-4">Duration: 30 Minutes | Difficulty: Beginner</small>
                                 <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
@@ -41,7 +41,7 @@ export default function PythonBeginnerTutorials() {
                     <div className="p-6 bg-green-100 rounded-xl shadow-lg transform transition duration-500 hover:scale-105">
                         <Link href={"/tutorials/python/beginner/fundamentals-part-two"}>
                             <div className="cursor-pointer">
-                                <h4 className="text-xl font-bold text-green-800 mb-3">Python Fundamentals Course 2</h4>
+                                <h4 className="text-lg  font-bold text-green-800 mb-3">Python Fundamentals Course 2</h4>
                                 <p className="text-green-600 mb-4">Explore lists, arrays, and basic object-oriented programming concepts.</p>
                                 <small className="block text-gray-500 mb-4">Duration: 30 Minutes | Difficulty: Beginner</small>
                                 <div className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
@@ -55,7 +55,7 @@ export default function PythonBeginnerTutorials() {
                     <div className="p-6 bg-purple-100 rounded-xl shadow-lg transform transition duration-500 hover:scale-105">
                         <Link href={"/tutorials/python/beginner/fundamentals-part-three"}>
                             <div className="cursor-pointer">
-                                <h4 className="text-xl font-bold text-purple-800 mb-3">Python Fundamentals Course 3</h4>
+                                <h4 className="text-lg  font-bold text-purple-800 mb-3">Python Fundamentals Course 3</h4>
                                 <p className="text-purple-600 mb-4">Advance your skills with topics like error handling and file operations.</p>
                                 <small className="block text-gray-500 mb-4">Duration: 30 Minutes | Difficulty: Beginner/Advanced</small>
                                 <div className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">

@@ -1,10 +1,10 @@
-import BitcoinComponent from "@/app/components/python/advancedtutorial/bitcoinComponent";
+import BlockchainPythonTutorial from "../blockchain-explained/page";
 import Head from "next/head";
 
 
 
 
-export default function BitcoinAnalysisPage() {
+export default function BlockchainPage() {
 
     return (
         <>
@@ -16,8 +16,7 @@ export default function BitcoinAnalysisPage() {
             </Head>
 
                 
-            <BitcoinComponent />
-        
+           <p>asd</p>
         </>
        
     )

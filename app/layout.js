@@ -18,13 +18,13 @@ export default function RootLayout({ children }) {
         <div className="flex flex-col md:flex-row w-full">
           {/* Sidebar (conditional rendering based on mode) */}
           {mode ? (
-            <div className="hidden md:block md:w-1/4 bg-white"></div>
+            <div className="hidden xl:block xl:w-1/4 bg-white"></div>
           ) : (
-            <div className="hidden md:block md:w-1/4 bg-zinc-800"></div>
+            <div className="hidden xl:block xl:w-1/4 bg-zinc-800"></div>
           )}
 
           {/* Main content area */}
-          <div className="w-full md:w-1/2 mx-auto bg-stone-100 min-h-screen p-5">
+          <div className="w-full xl:w-1/2 mx-auto bg-stone-100 min-h-screen p-5">
             <Breadcrumb />
             {/* Render children here */}
             {children}
@@ -33,9 +33,9 @@ export default function RootLayout({ children }) {
 
           {/* Additional sidebar (conditional rendering based on mode) */}
           {mode ? (
-            <div className="hidden md:block md:w-1/4 bg-white"></div>
+            <div className="hidden xl:block xl:w-1/4 bg-white"></div>
           ) : (
-            <div className="hidden md:block md:w-1/4 bg-zinc-800"></div>
+            <div className="hidden xl:block xl:w-1/4 bg-zinc-800"></div>
           )}
         </div>
         <FooterCompStandard />

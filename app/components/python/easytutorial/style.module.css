@@ -65,9 +65,7 @@
         width: 95%; /* Slightly increased width on smaller screens */
         padding: 10px; /* Reduced padding on smaller screens */
     }
-    .container h1, .container h2, .container h3, .container p {
-        font-size: 100%; /* Standard font size on smaller screens */
-    }
+    
     .code {
         padding: 5px; /* Reduced padding for code blocks on smaller screens */
         margin-top: 10px;

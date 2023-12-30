@@ -1,4 +1,4 @@
-import NeuralNetworkGraphic from "@/app/components/neuronal/neuronal";
+import NeuralNetworkGraphic from "@/app/components/python/advancedtutorial/neuronal/neuronal";
 import Head from "next/head";
 
 export default function NNNetwork() {

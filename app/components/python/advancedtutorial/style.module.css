@@ -8,6 +8,10 @@
     font-size: 1em; /* Standard font size for better legibility */
 }
 
+.container > p {
+    margin-top: 10px;
+}
+
 .container h1 {    
     font-size: 2em; /* Larger font size for main heading */
     font-weight: bold; /* Bold font weight for headings */
